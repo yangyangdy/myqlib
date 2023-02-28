@@ -65,6 +65,7 @@ REQUIRED = [
     # To ensure stable operation of the experiment manager, we have limited the version of mlflow,
     # and we need to verify whether version 2.0 of mlflow can serve qlib properly.
     "mlflow>=1.12.1, <=1.30.0",
+    # "mlflow",
     "tqdm",
     "loguru",
     "lightgbm>=3.3.0",
@@ -150,6 +151,7 @@ setup(
             # which prevented flake8 from working properly, so we restricted the version of importlib-metadata.
             # To help ensure the dependencies of flake8 https://github.com/python/importlib_metadata/issues/406
             "importlib-metadata<5.0.0",
+            # "importlib-metadata"
             "readthedocs_sphinx_ext",
             "cmake",
             "lxml",
